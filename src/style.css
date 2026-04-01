@@ -11,5 +11,20 @@
 
 #baixar-btn {
     background: linear-gradient(to right, var(--cor-primaria), var(--cor-secundaria));
-    border-radius: 10px;
+    border-radius: 8.5px;
+}
+
+.btn-cta {
+    background: linear-gradient(to right, var(--cor-primaria), var(--cor-secundaria));
+    border-radius: 8.5px;
+}
+
+h2 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-texto-primario);
+}
+
+p {
+    font-family: var(--fonte-corpo);
+    color: var(--cor-texto-primario);
 }
