@@ -1,0 +1,10 @@
+:root {
+    --cor-primaria: #E91E8C;
+    --cor-secundaria: #7C3AED;
+    --cor-fundo: #0F0F1A;
+    --cor-texto-primario: #1A1A2E;
+    --cor-texto-secundario: #6B7280;
+
+    --fonte-titulo: "Poppins", sans-serif;
+    --fonte-corpo: "Inter", sans-serif;
+}
