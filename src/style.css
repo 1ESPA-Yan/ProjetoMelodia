@@ -8,3 +8,8 @@
     --fonte-titulo: "Poppins", sans-serif;
     --fonte-corpo: "Inter", sans-serif;
 }
+
+#baixar-btn {
+    background: linear-gradient(to right, var(--cor-primaria), var(--cor-secundaria));
+    border-radius: 10px;
+}
