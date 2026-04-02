@@ -1,9 +1,9 @@
 :root {
-    --cor-primaria: #E91E8C;
-    --cor-secundaria: #7C3AED;
-    --cor-fundo: #0F0F1A;
-    --cor-texto-primario: #1A1A2E;
-    --cor-texto-secundario: #6B7280;
+    --cor-primaria: #E11D48;
+    --cor-secundaria: #9333EA;
+    --cor-fundo: #F9FAFB;
+    --cor-texto-primario: #1F2937;
+    --cor-texto-secundario: #4B5563;
 
     --fonte-titulo: "Poppins", sans-serif;
     --fonte-corpo: "Inter", sans-serif;
@@ -27,4 +27,38 @@ h2 {
 p {
     font-family: var(--fonte-corpo);
     color: var(--cor-texto-primario);
+}
+
+h3 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-texto-primario);
+}
+
+h4 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-texto-primario);
+}
+
+.cards-beneficios {
+    background-color: #FFF;
+    border-radius: 16px;
+}
+
+.icone-card {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.icone-card i {
+    font-size: 3rem;
+    background: linear-gradient(to right, var(--cor-primaria), var(--cor-secundaria));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }

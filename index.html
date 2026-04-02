@@ -16,7 +16,7 @@
 <body>
     <header>
         <nav class="navbar flex justify-between items-center px-16 py-4">
-            <img src="./src/images/LogoMelodia.png" alt="Logo Melodia" class="h-16 w-auto">
+            <img src="./src/images/LogoMelodia.png" alt="Logo Melodia" class="h-20 w-auto">
             <ul class="nav-list flex items-center gap-6">
                 <li><a href="#home">Início</a></li>
                 <li><a href="#beneficios">Benefícios</a></li>
@@ -29,11 +29,44 @@
     </header>
     <section id="home" class="flex justify-between items-center px-32 py-4">
         <div class="flex flex-col gap-4">
-            <h2 class=" titulo-hero text-6xl font-bold">Melodia: Sua Música, Sua Forma</h2>
-            <p class="corpo-hero text-base">Descubra qualidade de som superior, crie playlists personalizadas e encontre novos artistas com o App Melodia</p>
+            <h2 class=" titulo-hero text-6xl font-bold w-1/2">Melodia: Sua Música, Sua Forma</h2>
+            <p class="corpo-hero text-base w-2/3">Descubra qualidade de som superior, crie playlists personalizadas e encontre novos artistas com o App Melodia</p>
             <button class="btn-cta px-6 py-2 text-white self-start">Ouvir Agora</button>
         </div>
         <img src="./src/images/CelularMelodia.png" alt="Celular Melodia">
+    </section>
+    <section id="beneficios" class="px-32 py-4 pb-16 bg-[var(--cor-fundo)]">
+        <h3 class="titulo-beneficios text-4xl font-bold my-10 text-center">Porque escolher o Melodia?</h3>
+        <div class="grid grid-cols-4 gap-8">
+            <div class="cards-beneficios flex flex-col gap-2 p-6">
+                <div class="icone-card">
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <h4 class="titulo-card text-xl font-bold">Som superior</h4>
+                <p class="corpo-card text-base">Áudio em alta fidelidade para uma experiência musical incomparável.</p>
+            </div>
+            <div class="cards-beneficios flex flex-col gap-2 p-6">
+                <div class="icone-card">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <h4 class="titulo-card text-xl font-bold">Playlists Próprias</h4>
+                <p class="corpo-card text-base">Crie e personalize suas playlists do seu jeito.</p>
+            </div>
+            <div class="cards-beneficios flex flex-col gap-2 p-6">
+                <div class="icone-card">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <h4 class="titulo-card text-xl font-bold">Novos Artistas</h4>
+                <p class="corpo-card text-base">Descubra talentos independentes e novos artistas todo dia.</p>
+            </div>
+            <div class="cards-beneficios flex flex-col gap-4 p-6">
+                <div class="icone-card">
+                    <i class="fa-solid fa-hand-pointer"></i>
+                </div>
+                <h4 class="titulo-card text-xl font-bold">Fácil de Usar</h4>
+                <p class="corpo-card text-base">Interface intuitiva com gestos e animações musicais.</p>
+            </div>
+        </div>
     </section>
 </body>
 </html>
