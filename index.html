@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +12,10 @@
     <!-- Biblioteca de ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
         <nav class="navbar flex justify-between items-center px-16 py-4">
@@ -27,14 +30,17 @@
             </ul>
         </nav>
     </header>
+
     <section id="home" class="flex justify-between items-center px-32 py-4">
         <div class="flex flex-col gap-4">
             <h2 class=" titulo-hero text-6xl font-bold w-1/2">Melodia: Sua Música, Sua Forma</h2>
-            <p class="corpo-hero text-base w-2/3">Descubra qualidade de som superior, crie playlists personalizadas e encontre novos artistas com o App Melodia</p>
+            <p class="corpo-hero text-base w-2/3">Descubra qualidade de som superior, crie playlists personalizadas e
+                encontre novos artistas com o App Melodia</p>
             <button class="btn-cta px-6 py-2 text-white self-start">Ouvir Agora</button>
         </div>
         <img src="./src/images/CelularMelodia.png" alt="Celular Melodia">
     </section>
+
     <section id="beneficios" class="px-32 py-4 pb-16 bg-[var(--cor-fundo)]">
         <h3 class="titulo-beneficios text-4xl font-bold my-10 text-center">Porque escolher o Melodia?</h3>
         <div class="grid grid-cols-4 gap-8">
@@ -68,8 +74,33 @@
             </div>
         </div>
     </section>
-    <section id="funcionalidades">
 
+    <section id="funcionalidades" class="px-32 py-4 pb-16">
+        <h3 class="titulo-funcionalidades text-4xl font-bold my-10 text-center">Explore nossas funcionalidades
+            exclusivas</h3>
+        <div class="grid grid-cols-4 gap-8">
+            <img src="./src/images/CardBeneficios1.png" alt="Card Benefício 1" class="w-full h-64 object-contain rounded-xl">
+            <img src="./src/images/CardBeneficios2.png" alt="Card Benefício 2" class="w-full h-64 object-contain rounded-xl">
+            <img src="./src/images/CardBeneficios3.png" alt="Card Benefício 3" class="w-full h-64 object-contain rounded-xl">
+            <img src="./src/images/CardBeneficios4.png" alt="Card Benefício 4" class="w-full h-64 object-contain rounded-xl">
+            <div class="cards-funcionalidades p-4 flex flex-col gap-2">
+                <h4 class="titulo-card text-xl font-bold">Qualidade de Som Superior</h4>
+                <p class="corpo-card text-base">High-fidelity para uma experiência sonora incomparável.</p>
+            </div>
+            <div class="cards-funcionalidades p-4 flex flex-col gap-2">
+                <h4 class="titulo-card text-xl font-bold">Criação de Playlists Personalizadas</h4>
+                <p class="corpo-card text-base">Crie playlists com suas cores e estilo favoritos.</p>
+            </div>
+            <div class="cards-funcionalidades p-4 flex flex-col gap-2">
+                <h4 class="titulo-card text-xl font-bold">Descoberta de Novos Artistas</h4>
+                <p class="corpo-card text-base">Encontre novos talentos baseados no seu gosto.</p>
+            </div>
+            <div class="cards-funcionalidades p-4 flex flex-col gap-2">
+                <h4 class="titulo-card text-xl font-bold">Interface Intuitiva</h4>
+                <p class="corpo-card text-base">Utilize gestos e animações musicais fluidas.</p>
+            </div>
+        </div>
     </section>
 </body>
+
 </html>
