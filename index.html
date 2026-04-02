@@ -5,48 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Melodia</title>
-    <!-- Tailwind via cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet" href="./src/style.css">
-    <!-- Biblioteca de ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400&family=Inter:wght@400;600&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <nav class="navbar flex justify-between items-center px-16 py-4">
+        <nav class="navbar flex flex-col md:flex-row justify-between items-center px-6 md:px-16 lg:px-32 py-4 gap-4 md:gap-0">
             <img src="./src/images/LogoMelodia.png" alt="Logo Melodia" class="h-20 w-auto">
-            <ul class="nav-list flex items-center gap-6">
+            <ul class="nav-list flex flex-wrap justify-center items-center gap-6">
                 <li><a href="#home">Início</a></li>
                 <li><a href="#beneficios">Benefícios</a></li>
                 <li><a href="#funcionalidades">Funcionalidades</a></li>
                 <li><a href="#depoimentos">Depoimentos</a></li>
                 <li><a href="#contato">Contato</a></li>
-                <li><a id="baixar-btn" class="px-7 py-2.5 text-white">Baixar</a></li>
+                <li><a id="baixar-btn" class="px-7 py-2.5 text-white cursor-pointer">Baixar</a></li>
             </ul>
         </nav>
     </header>
 
- <section id="home" class="flex justify-between items-center px-32 py-16"> 
-        <div class="flex flex-col gap-8 w-1/2"> 
-            
-            <h2 class=" titulo-hero text-7xl font-bold w-full">Melodia: Sua Música, Sua Forma</h2> 
-            
-            <p class="corpo-hero text-xl w-full text-gray-600">Descubra qualidade de som superior, crie playlists personalizadas e encontre novos artistas com o App Melodia</p> 
-            
-            <button class="btn-cta px-8 py-4 text-lg text-white self-start">Ouvir Agora</button> 
+    <section id="home" class="flex flex-col-reverse lg:flex-row justify-between items-center px-6 md:px-16 lg:px-32 py-10 lg:py-16 gap-10 lg:gap-0"> 
+        <div class="flex flex-col gap-6 lg:gap-8 w-full lg:w-1/2 text-center lg:text-left items-center lg:items-start"> 
+            <h2 class="titulo-hero text-5xl md:text-6xl lg:text-7xl font-bold w-full">Melodia: Sua Música, Sua Forma</h2> 
+            <p class="corpo-hero text-lg lg:text-xl w-full text-gray-600">Descubra qualidade de som superior, crie playlists personalizadas e encontre novos artistas com o App Melodia</p> 
+            <button class="btn-cta px-8 py-4 text-lg text-white">Ouvir Agora</button> 
         </div>
-        
-        <img src="./src/images/CelularMelodia.png" alt="Celular Melodia">
+        <img src="./src/images/CelularMelodia.png" alt="Celular Melodia" class="w-2/3 md:w-1/2 lg:w-auto max-w-sm">
     </section>
 
-    <section id="beneficios" class="px-32 py-4 pb-16 bg-[var(--cor-fundo)]">
+    <section id="beneficios" class="px-6 md:px-16 lg:px-32 py-4 pb-16 bg-[var(--cor-fundo)]">
         <h3 class="titulo-beneficios text-4xl font-bold my-10 text-center">Porque escolher o Melodia?</h3>
-        <div class="grid grid-cols-4 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div class="cards-beneficios flex flex-col gap-2 p-6">
                 <div class="icone-card">
                     <i class="fa-solid fa-volume-high"></i>
@@ -78,120 +71,100 @@
         </div>
     </section>
 
-    <section id="funcionalidades" class="px-32 py-4 pb-16">
-        <h3 class="titulo-funcionalidades text-4xl font-bold my-10 text-center">Explore nossas funcionalidades
-            exclusivas</h3>
-        <div class="grid grid-cols-4 gap-8">
-            <img src="./src/images/CardBeneficios1.png" alt="Card Benefício 1"
-                class="w-full h-64 object-contain rounded-xl">
-            <img src="./src/images/CardBeneficios2.png" alt="Card Benefício 2"
-                class="w-full h-64 object-contain rounded-xl">
-            <img src="./src/images/CardBeneficios3.png" alt="Card Benefício 3"
-                class="w-full h-64 object-contain rounded-xl">
-            <img src="./src/images/CardBeneficios4.png" alt="Card Benefício 4"
-                class="w-full h-64 object-contain rounded-xl">
-            <div class="cards-funcionalidades p-4 flex flex-col gap-2">
-                <h4 class="titulo-card text-xl font-bold">Qualidade de Som Superior</h4>
-                <p class="corpo-card text-base">High-fidelity para uma experiência sonora incomparável.</p>
+    <section id="funcionalidades" class="px-6 md:px-16 lg:px-32 py-4 pb-16">
+        <h3 class="titulo-funcionalidades text-4xl font-bold my-10 text-center">Explore nossas funcionalidades exclusivas</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <div class="flex flex-col gap-4">
+                <img src="./src/images/CardBeneficios1.png" alt="Card Benefício 1" class="w-full h-64 object-contain rounded-xl">
+                <div class="cards-funcionalidades p-4 flex flex-col gap-2 h-full">
+                    <h4 class="titulo-card text-xl font-bold">Qualidade de Som Superior</h4>
+                    <p class="corpo-card text-base">High-fidelity para uma experiência sonora incomparável.</p>
+                </div>
             </div>
-            <div class="cards-funcionalidades p-4 flex flex-col gap-2">
-                <h4 class="titulo-card text-xl font-bold">Criação de Playlists Personalizadas</h4>
-                <p class="corpo-card text-base">Crie playlists com suas cores e estilo favoritos.</p>
+
+            <div class="flex flex-col gap-4">
+                <img src="./src/images/CardBeneficios2.png" alt="Card Benefício 2" class="w-full h-64 object-contain rounded-xl">
+                <div class="cards-funcionalidades p-4 flex flex-col gap-2 h-full">
+                    <h4 class="titulo-card text-xl font-bold">Criação de Playlists Personalizadas</h4>
+                    <p class="corpo-card text-base">Crie playlists com suas cores e estilo favoritos.</p>
+                </div>
             </div>
-            <div class="cards-funcionalidades p-4 flex flex-col gap-2">
-                <h4 class="titulo-card text-xl font-bold">Descoberta de Novos Artistas</h4>
-                <p class="corpo-card text-base">Encontre novos talentos baseados no seu gosto.</p>
+
+            <div class="flex flex-col gap-4">
+                <img src="./src/images/CardBeneficios3.png" alt="Card Benefício 3" class="w-full h-64 object-contain rounded-xl">
+                <div class="cards-funcionalidades p-4 flex flex-col gap-2 h-full">
+                    <h4 class="titulo-card text-xl font-bold">Descoberta de Novos Artistas</h4>
+                    <p class="corpo-card text-base">Encontre novos talentos baseados no seu gosto.</p>
+                </div>
             </div>
-            <div class="cards-funcionalidades p-4 flex flex-col gap-2">
-                <h4 class="titulo-card text-xl font-bold">Interface Intuitiva</h4>
-                <p class="corpo-card text-base">Utilize gestos e animações musicais fluidas.</p>
+
+            <div class="flex flex-col gap-4">
+                <img src="./src/images/CardBeneficios4.png" alt="Card Benefício 4" class="w-full h-64 object-contain rounded-xl">
+                <div class="cards-funcionalidades p-4 flex flex-col gap-2 h-full">
+                    <h4 class="titulo-card text-xl font-bold">Interface Intuitiva</h4>
+                    <p class="corpo-card text-base">Utilize gestos e animações musicais fluidas.</p>
+                </div>
             </div>
+
         </div>
     </section>
 
-
-    <section id="depoimentos" class="px-32 py-4 pb-16 bg-[var(--cor-fundo)]">
+    <section id="depoimentos" class="px-6 md:px-16 lg:px-32 py-4 pb-16 bg-[var(--cor-fundo)]">
         <h3 class="titulo-depoimentos text-4xl font-bold my-10 text-center">O que nossos usuários dizem</h3>
-        <div class="grid grid-cols-3 gap-8">
-
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div class="cards-beneficios flex flex-col gap-4 p-6">
                 <div class="flex items-center gap-4">
-                    <img src="https://i.pravatar.cc/52?img=47" alt="Ana Martins" class="rounded-full"
-                        style="width:52px; height:52px; object-fit:cover; flex-shrink:0;">
+                    <img src="https://i.pravatar.cc/52?img=47" alt="Ana Martins" class="rounded-full" style="width:52px; height:52px; object-fit:cover; flex-shrink:0;">
                     <div>
                         <h4 class="titulo-card text-base font-bold">Ana Martins</h4>
                         <p class="corpo-card text-sm" style="color: var(--cor-texto-secundario);">@ana.martins</p>
                     </div>
                 </div>
-                <p class="corpo-card text-base" style="color: var(--cor-texto-secundario);">"A qualidade do som é
-                    incomparável. Nunca ouvi minhas músicas favoritas tão bem assim. O Melodia mudou completamente minha
-                    experiência musical."</p>
+                <p class="corpo-card text-base" style="color: var(--cor-texto-secundario);">"A qualidade do som é incomparável. Nunca ouvi minhas músicas favoritas tão bem assim. O Melodia mudou completamente minha experiência musical."</p>
                 <div style="color: #E11D48;">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                 </div>
             </div>
 
             <div class="cards-beneficios flex flex-col gap-4 p-6">
                 <div class="flex items-center gap-4">
-                    <img src="https://i.pravatar.cc/52?img=12" alt="Rafael Costa" class="rounded-full"
-                        style="width:52px; height:52px; object-fit:cover; flex-shrink:0;">
+                    <img src="https://i.pravatar.cc/52?img=12" alt="Rafael Costa" class="rounded-full" style="width:52px; height:52px; object-fit:cover; flex-shrink:0;">
                     <div>
                         <h4 class="titulo-card text-base font-bold">Rafael Costa</h4>
                         <p class="corpo-card text-sm" style="color: var(--cor-texto-secundario);">@rafaelcosta</p>
                     </div>
                 </div>
-                <p class="corpo-card text-base" style="color: var(--cor-texto-secundario);">"Descobri artistas incríveis
-                    que nunca teria encontrado em outro lugar. A funcionalidade de descoberta do Melodia é realmente
-                    diferente."</p>
+                <p class="corpo-card text-base" style="color: var(--cor-texto-secundario);">"Descobri artistas incríveis que nunca teria encontrado em outro lugar. A funcionalidade de descoberta do Melodia é realmente diferente."</p>
                 <div style="color: #E11D48;">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                 </div>
             </div>
 
             <div class="cards-beneficios flex flex-col gap-4 p-6">
                 <div class="flex items-center gap-4">
-                    <img src="https://i.pravatar.cc/52?img=35" alt="Julia Santos" class="rounded-full"
-                        style="width:52px; height:52px; object-fit:cover; flex-shrink:0;">
+                    <img src="https://i.pravatar.cc/52?img=35" alt="Julia Santos" class="rounded-full" style="width:52px; height:52px; object-fit:cover; flex-shrink:0;">
                     <div>
                         <h4 class="titulo-card text-base font-bold">Julia Santos</h4>
                         <p class="corpo-card text-sm" style="color: var(--cor-texto-secundario);">@ju.santos</p>
                     </div>
                 </div>
-                <p class="corpo-card text-base" style="color: var(--cor-texto-secundario);">"Criar playlists nunca foi
-                    tão fácil e divertido. A interface é super intuitiva e as animações deixam tudo muito mais agradável
-                    de usar."</p>
+                <p class="corpo-card text-base" style="color: var(--cor-texto-secundario);">"Criar playlists nunca foi tão fácil e divertido. A interface é super intuitiva e as animações deixam tudo muito mais agradável de usar."</p>
                 <div style="color: #E11D48;">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                 </div>
             </div>
-
         </div>
     </section>
 
-
-    <section id="contato" class="px-32 py-4 pb-16">
+    <section id="contato" class="px-6 md:px-16 lg:px-32 py-4 pb-16">
         <h3 class="text-4xl font-bold my-10 text-center">Fique por dentro das novidades</h3>
         <div class="cards-beneficios flex flex-col items-center gap-6 p-12 max-w-2xl mx-auto">
             <p class="text-base text-center" style="color: var(--cor-texto-secundario);">
-                Cadastre seu e-mail e seja o primeiro a saber sobre novidades, lançamentos e ofertas exclusivas do
-                Melodia.
+                Cadastre seu e-mail e seja o primeiro a saber sobre novidades, lançamentos e ofertas exclusivas do Melodia.
             </p>
-            <div class="flex w-full gap-3">
-                <input type="email" placeholder="Digite seu melhor e-mail"
-                    class="flex-1 px-4 py-3 rounded-xl border border-gray-200 outline-none text-base"
-                    style="font-family: var(--fonte-corpo); color: var(--cor-texto-primario);">
+            <div class="flex flex-col sm:flex-row w-full gap-3">
+                <input type="email" placeholder="Digite seu melhor e-mail" class="flex-1 px-4 py-3 rounded-xl border border-gray-200 outline-none text-base" style="font-family: var(--fonte-corpo); color: var(--cor-texto-primario);">
                 <button class="btn-cta px-6 py-3 text-white" style="white-space: nowrap;">
                     Quero receber
                 </button>
@@ -202,10 +175,8 @@
         </div>
     </section>
 
-
-    <footer class="px-32 py-10"
-        style="background: linear-gradient(to right, var(--cor-primaria), var(--cor-secundaria));">
-        <div class="flex justify-between items-start gap-8">
+    <footer class="px-6 md:px-16 lg:px-32 py-10" style="background: linear-gradient(to right, var(--cor-primaria), var(--cor-secundaria));">
+        <div class="flex flex-col md:flex-row flex-wrap justify-between items-start gap-8">
 
             <div class="flex flex-col gap-3">
                 <img src="./src/images/LogoMelodia.png" alt="Logo Melodia" class="h-14 w-auto brightness-0 invert">
@@ -217,10 +188,8 @@
                 <ul class="flex flex-col gap-2">
                     <li><a href="#home" class="text-sm" style="color: rgba(255,255,255,0.8);">Início</a></li>
                     <li><a href="#beneficios" class="text-sm" style="color: rgba(255,255,255,0.8);">Benefícios</a></li>
-                    <li><a href="#funcionalidades" class="text-sm"
-                            style="color: rgba(255,255,255,0.8);">Funcionalidades</a></li>
-                    <li><a href="#depoimentos" class="text-sm" style="color: rgba(255,255,255,0.8);">Depoimentos</a>
-                    </li>
+                    <li><a href="#funcionalidades" class="text-sm" style="color: rgba(255,255,255,0.8);">Funcionalidades</a></li>
+                    <li><a href="#depoimentos" class="text-sm" style="color: rgba(255,255,255,0.8);">Depoimentos</a></li>
                     <li><a href="#contato" class="text-sm" style="color: rgba(255,255,255,0.8);">Contato</a></li>
                 </ul>
             </div>
@@ -228,41 +197,25 @@
             <div class="flex flex-col gap-3">
                 <h4 class="text-base font-bold" style="color: #fff;">Redes Sociais</h4>
                 <ul class="flex flex-col gap-2">
-                    <li>
-                        <a href="#" class="flex items-center gap-2 text-sm" style="color: rgba(255,255,255,0.8);">
-                            <i class="fa-brands fa-instagram"></i> Instagram
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="flex items-center gap-2 text-sm" style="color: rgba(255,255,255,0.8);">
-                            <i class="fa-brands fa-twitter"></i> Twitter
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="flex items-center gap-2 text-sm" style="color: rgba(255,255,255,0.8);">
-                            <i class="fa-brands fa-youtube"></i> YouTube
-                        </a>
-                    </li>
+                    <li><a href="#" class="flex items-center gap-2 text-sm" style="color: rgba(255,255,255,0.8);"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#" class="flex items-center gap-2 text-sm" style="color: rgba(255,255,255,0.8);"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#" class="flex items-center gap-2 text-sm" style="color: rgba(255,255,255,0.8);"><i class="fa-brands fa-youtube"></i> YouTube</a></li>
                 </ul>
             </div>
 
             <div class="flex flex-col gap-3">
                 <h4 class="text-base font-bold" style="color: #fff;">Contato</h4>
                 <ul class="flex flex-col gap-2">
-                    <li class="flex items-center gap-2 text-sm" style="color: rgba(255,255,255,0.8);">
-                        <i class="fa-solid fa-envelope"></i> contato@melodia.app
-                    </li>
-                    <li class="flex items-center gap-2 text-sm" style="color: rgba(255,255,255,0.8);">
-                        <i class="fa-solid fa-phone"></i> (11) 99999-9999
-                    </li>
+                    <li class="flex items-center gap-2 text-sm" style="color: rgba(255,255,255,0.8);"><i class="fa-solid fa-envelope"></i> contato@melodia.app</li>
+                    <li class="flex items-center gap-2 text-sm" style="color: rgba(255,255,255,0.8);"><i class="fa-solid fa-phone"></i> (11) 99999-9999</li>
                 </ul>
             </div>
 
         </div>
 
-        <div class="mt-10 pt-6 flex justify-between items-center" style="border-top: 1px solid rgba(255,255,255,0.2);">
-            <p class="text-sm" style="color: rgba(255,255,255,0.7);">© 2025 Melodia. Todos os direitos reservados.</p>
-            <a href="#" class="text-sm" style="color: rgba(255,255,255,0.7);">Política de Privacidade</a>
+        <div class="mt-10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4" style="border-top: 1px solid rgba(255,255,255,0.2);">
+            <p class="text-sm text-center" style="color: rgba(255,255,255,0.7);">© 2025 Melodia. Todos os direitos reservados.</p>
+            <a href="#" class="text-sm text-center" style="color: rgba(255,255,255,0.7);">Política de Privacidade</a>
         </div>
     </footer>
 </body>
